@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Displaying Form Data in the same page using JavaScript.</h2>
+
+    <table>
+        <tr>
+            <td style="width:48% ;" >
+                <h2>Registration Form</h2><hr>
+                <form onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off" id="form">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Enter Name">
+                    </div>
+                    <div>
+                        <label for="name">Email Id:</label>
+                        <input type="mail" name="mail" placeholder="Enter Email Id" id="mail">
+                    </div>
+                    <div>
+                        <label for="name">Date of Birth:</label>
+                        <input type="date" name="dob"  id="dob">
+                    </div>
+                    <div>
+                        <label for="name">photo link:</label>
+                        <input type="url" name="dob"  id="pic">
+                    </div>
+                    <div>
+                        <label for="name">Website Link:</label>
+                        <input type="url" name="dob"  id="web">
+                    </div>
+                    
+                    <div>
+                        <label for="country">Country:</label>
+                        <select name="country" id="country">
+                            <option value="India">India</option>
+                            <option value="Aus">Australia</option>
+                            <option value="china">China</option>
+                            <option value="japan">Japan</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="gender">Gender:</label>
+                        <input type="radio" name="gender" id="male" value="male"> <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="female"> <label for="female">Female</label>
+                        <input type="radio" name="gender" id="other" value="other"> <label for="other">other</label>
+                    </div>
+                    <div>
+                        <label for="hobbies">Hobbies:</label>
+                        <label><input type="checkbox" name="hobbies"  value="Sports" class="hobbies">Sports</label>
+                        <label><input type="checkbox" name="hobbies"  value="Music"  class="hobbies">Music</label>
+                        <label><input type="checkbox"  name="hobbies"  value="Movies" class="hobbies">Movies</label>
+                    </div>
+                    <div>
+                        <input type="submit" value="Submit" class="button">
+                    </div>
+                    
+                </form>
+            </td>
+            <td >
+                <h2>Details</h2>
+                <table class="list" id="stulist">
+                <tbody></tbody>
+                </table>
+                
+                
+            </td>
+        </tr>
+        
+    </table>
+    <button onclick="clear()">Clear All</button>
+    <script src="form.js"></script>
+</body>
+</html>

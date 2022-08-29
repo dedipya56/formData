@@ -1,0 +1,75 @@
+body{
+    text-align: center;
+    background: linear-gradient(to top, #7cd4e8 20%, #9785f3 80%);
+    
+    background-size: cover;
+    height: 100%;
+}
+body>table{
+    text-align: center;
+    width: 100%;
+}
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+td{
+    border: 1px solid;
+    padding: 8px;
+}
+tr{ border: 1px solid;
+    height: 100px;
+    margin: 5px;
+}
+div{
+    margin: 4%;
+}
+label{
+    font-weight: bold;
+}
+.button {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+		-webkit-tap-highlight-color: transparent;
+}
+
+.button {
+	width: 100px;
+	height: 30px;
+	cursor: pointer;
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+	background: white;
+	border: 2px solid black;
+	box-shadow: 5px 5px 0 black,
+		-5px -5px 0 black,
+		-5px 5px 0 black,
+		5px -5px 0 black;
+	transition: 500ms ease-in-out;
+}
+
+.button:hover {
+	box-shadow: 20px 5px 0 black, -20px -5px 0 black;
+}
+
+.button:focus {
+	outline: none;
+}
+#stulist{
+    border:0;
+    margin-left: 25%;
+}
+.list>tbody>tr>td{
+    border:1px;
+    border-right-color: transparent;
+    border-collapse: separate;
+}
+button{
+    margin-top: 3px;
+    float: right;
+}
